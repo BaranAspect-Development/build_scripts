@@ -3,13 +3,13 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 15 --git-lfs
+repo init -u https://github.com/Masood-J/manifest_evolution.git -b vic --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Masood-J/rom-build.git -b derp-15 .repo/local_manifests
+git clone https://github.com/Masood-J/rom-build.git -b evo-x .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -22,13 +22,14 @@ echo "============="
 
 rm -rf hardware/qcom-caf/msm8996 \
        hardware/qcom-caf/msm8998 \
+       hardware/qcom-caf/sdm660 \
+       hardware/qcom-caf/msm8953 \
        hardware/qcom-caf/sdm845 \
        hardware/qcom-caf/sm8150 \
        hardware/qcom-caf/sm8250 \
        hardware/qcom-caf/sm8350 \
        hardware/qcom-caf/sm8450 \
-       hardware/qcom-caf/sm8550
-       
+       hardware/qcom-caf/sm8550 
 echo "==========================="
 echo "Unnecessary dirs removed"
 echo "==========================="
@@ -41,4 +42,4 @@ export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 . build/envsetup.sh
 
 echo "======= Export Done ======"
-lunch derp_topaz-user && mka derp
+lunch lineage_topaz-ap4a-userdebug && m evolution
