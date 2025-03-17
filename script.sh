@@ -41,7 +41,7 @@ export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 # initiate build setup
 . build/envsetup.sh
 
-export WITH_GMS := false
+export WITH_GMS=false
 
 
 echo "======= Export Done ======"
