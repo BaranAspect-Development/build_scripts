@@ -45,4 +45,4 @@ export WITH_GMS=false
 
 
 echo "======= Export Done ======"
-lunch lineage_topaz-bp1a-userdebug && mka bacon || brunch a10 userdebug
+lunch lineage_topaz-bp1a-userdebug && mka bacon 
