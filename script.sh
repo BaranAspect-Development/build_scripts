@@ -9,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Masood-J/rom-build.git -b evo-x .repo/local_manifests
+git clone https://github.com/BaranAspect-Development/rom-build.git -b evo-x .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
