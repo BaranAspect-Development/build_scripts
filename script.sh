@@ -3,7 +3,7 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/Masood-J/manifest_evolution.git -b vic --git-lfs
+repo init -u https://github.com/Masood-J/manifest_evolution -b vic-qpr1 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
